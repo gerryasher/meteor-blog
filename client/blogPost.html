@@ -1,0 +1,12 @@
+<template name="blogPost">
+  <h3>Blog Detail</h3>
+  <a href="/">Back</a>
+  {{#if postReady}}
+    {{#with post}}
+      <h3>{{LocName}}</h3>
+      <p>{{LocStreet}}</p>
+    {{/with}}
+  {{else}}
+      <p>Loading...</p>
+  {{/if}}
+</template>
