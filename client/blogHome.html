@@ -1,0 +1,14 @@
+<template name="blogHome">
+  <p>This is the home page of our blog</p>
+
+  <ul>
+    {{#if postReady}}
+    {{#each posts}}
+    <li><a href="/blog/{{_id}}">{{LocName}}</a></li>
+    {{/each}}
+    {{else}}
+      <p>Loading...</p>
+    {{/if}}
+  </ul>
+
+</template>
